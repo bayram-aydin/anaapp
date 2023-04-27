@@ -38,3 +38,9 @@ tüm projeye bakan url bağlantılarını buraya aldık.
  yeni eklenen pages altında urls.py de eklenilen url lerin çalışması için aynı dizindeki
  views.py sayfasına fonksiyonları yazmak ve sayfanın en üstünde 
  sayfalar arası bağlantıları kurmak gerekiyor.
+ dinami kurl tanımlarken url yoluna "'<category>'"şeklinde yazılır ve
+ views.py de fonksiyon lar tanımlanırken "request"in yanına 
+ (request, category): bu şekilde ikinci bir parametre vermek gerekiyor.
+ not: dinamik url yazdığında her zaman en altta olması gerekir.
+ yoksa üsttekilerin çalışmasını engeller.
+ video 2.6 ya geldik bitti. 2.7 deyiz.
