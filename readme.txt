@@ -26,3 +26,15 @@ onu da:
 "from . import views" şeklinde "urls.py" sayfasının üst kısmına yazarsın.
 artık "views" e ulaştın. views teki fonksiyonları başına "views." yazarak kullanabilirsin.
 video 2.3 te kaldık. bunda git ve github bağlantısı yapacak.
+git kuruldu. github bağlantısı yapıldı.
+projeye bir tane git.md dosyası ekledim. git ile ilgili bilgileri oraya yazdım.
+video 2.4 te url yapısını pekiştirmek için uygulama yaptı.
+projeye yeni bir modül ekledik adı pages sırasıyla
+yeni modülü anaapp altındaki seetings.py de INSTALLED_APPS altına tanıttık.
+sonra pages içine urls.py sayfası ekledik. 
+tüm projeye bakan url bağlantılarını buraya aldık.
+Önemli: anaapp altındaki urls.py sayfasında "urlpatterns" altında uygulamalara eklenen
+ urls.py sayfalarını eklemek gerekiyor.
+ yeni eklenen pages altında urls.py de eklenilen url lerin çalışması için aynı dizindeki
+ views.py sayfasına fonksiyonları yazmak ve sayfanın en üstünde 
+ sayfalar arası bağlantıları kurmak gerekiyor.

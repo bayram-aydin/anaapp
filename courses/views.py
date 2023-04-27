@@ -1,8 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
-def home (request):
-    return HttpResponse("Ana Sayfa")
+
 def kurslar (request):
     return HttpResponse("Kurslar Sayfa") 
+def details (request):
+    return HttpResponse("Detay Sayfa") 
+def programlama (request):
+    return HttpResponse("Programlama Sayfa") 
+def mobiluygulamalar (request):
+    return HttpResponse("Mobil uygulamalar Sayfa") 
