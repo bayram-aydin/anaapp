@@ -44,3 +44,8 @@ tüm projeye bakan url bağlantılarını buraya aldık.
  not: dinamik url yazdığında her zaman en altta olması gerekir.
  yoksa üsttekilerin çalışmasını engeller.
  video 2.6 ya geldik bitti. 2.7 deyiz.
+ url redirect bişey anlatıldı. url nin yeniden yönlendirilmesi ile ilgili.
+ video 2.8 from django.urls import reverse metodu ve args diye bir metod kullandık.
+ url lere isim vererek değişiklik gerektiğinde tek merkezden tüm sayfaları gezmeden
+ değiştirme imkanı veriri.
+ urls & views dersleri bitti
