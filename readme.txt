@@ -49,3 +49,4 @@ tüm projeye bakan url bağlantılarını buraya aldık.
  url lere isim vererek değişiklik gerektiğinde tek merkezden tüm sayfaları gezmeden
  değiştirme imkanı veriri.
  urls & views dersleri bitti
+ video 3.3 te kaldık.

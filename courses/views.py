@@ -8,6 +8,8 @@ data = {
     "mobil":"mobil işine ait kurlar işine ait kurlar",
 }
 
+def index (request):
+    return render(request, "courses/index.html")
 def kurslar (request):
     return HttpResponse("Kurslar Sayfa") 
 def details (request, kurs_adi):
