@@ -50,3 +50,6 @@ tüm projeye bakan url bağlantılarını buraya aldık.
  değiştirme imkanı veriri.
  urls & views dersleri bitti
  video 3.3 te kaldık.
+ ana dizine klasör eklersen settins.py ye gidip
+ TEMPLATES altında bulunan bölüme gidip "BASE_DIR / "templates","
+ buşekilde ekleme yapılır.
