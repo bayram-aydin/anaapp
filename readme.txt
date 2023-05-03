@@ -69,3 +69,12 @@ tüm projeye bakan url bağlantılarını buraya aldık.
 {% load static %}
 ikisini birlikte çağırısan extends i aşağıya yazarsan hata veriyor.
  en üste yazılmasını istiyor.
+ global seviyede static kalsörü ekleme işlemleri.
+ ana dizindeki seetings sayfasına STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+kodunu ekle.
+ana dizinde ana çatıyı kuran htmtl sayfasına git.(layout.html)
+en üste {% load static %} işlemini yap ondan sonra
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+bağlantısını kur.
