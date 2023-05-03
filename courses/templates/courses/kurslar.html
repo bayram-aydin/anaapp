@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>Kurslar | AnaSayfa</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h1>{{category}}</h1>
+                <p>{{category_text}}</p>
+            </div>
+        </div>
+
+    </div>
+{% endblock content %}
+
+{% block js_files %}{% endblock js_files %} {% comment %} boş bırakılabilir lazım olunca kullanılır. {% endcomment %}
