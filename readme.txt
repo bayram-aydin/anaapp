@@ -53,3 +53,19 @@ tüm projeye bakan url bağlantılarını buraya aldık.
  ana dizine klasör eklersen settins.py ye gidip
  TEMPLATES altında bulunan bölüme gidip "BASE_DIR / "templates","
  buşekilde ekleme yapılır.
+ 3.13 videoda uygulama altına static klasörü ekleyip resimleri bağladık.
+ 1- uygulama altındaki 'static' klasörü anaapp teki STATIC_URL = 'static/'
+ eklenmiş olmalı.
+ 2- uygulama altına satatic klasörü onun altına tekrar bir klasör ekledik courses adında
+ yani hangi uyguladaysak onun adını verdik.
+ ondan sonra css, js, img klasörlerini içine attık. (anaapp\courses\static\courses\img)
+ 3- views içindeki data kaynağında veya database de resmin url yolu yazılmayacak
+ sadece klasör içindeki adı doğru yazılacak:("imageUrl":"02.jpg",)
+ 4-resmin çağırıldığı html sayfasında url yolu sağlanacak. mesela:
+  <img src="{% static 'courses/img/'|add:course.imageUrl %}">
+  önemli: pip işaretinden sonra "|" boşluk bırakırsan url yolu bozuluyor ve resmi göremiyor.
+  bir dosyaya
+  {% extends 'layout.html' %}
+{% load static %}
+ikisini birlikte çağırısan extends i aşağıya yazarsan hata veriyor.
+ en üste yazılmasını istiyor.
