@@ -78,3 +78,22 @@ ana dizinde ana çatıyı kuran htmtl sayfasına git.(layout.html)
 en üste {% load static %} işlemini yap ondan sonra
 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 bağlantısını kur.
+4. bölüm: MODELS
+models denene şey veri tabanında oluştutulan tabloların adları.
+model ekleme:
+projeye eklenen modüllerin altında models.py dosyası var.
+bu dosyaya modelleri oluşturuyoruz.
+mesela: from django.db import models
+        class Course(models.Model):
+        title = models.CharField(max_length=50)
+models ten çok seçenek çağırılabilir. django da field lar geniş bir konu 
+sitesinden inceleme yapılmalı. 
+video 4.3 migrations 
+python manage.py migrate
+komutu ile migrations yapıldı. db browser indirildi.
+yeni migrations oluşturma: python manage.py makemigrations
+komutunu çalıştırdık ardından courses uygulaması altında 
+migrations klasörü içinde 0001_inintial.py adında bir sayfa oluşturuldu.
+ama bunu da ayrıca uygulamak gerekiyor.
+migrations uygulama:  python manage.py migrate
+çalıştırdık ve uygulandı.
