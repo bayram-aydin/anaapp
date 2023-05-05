@@ -16,17 +16,17 @@
     {% include "partials/_nav.html" %}
     <div class="container mt-3">
         <div class="row">
-            <div class="col-3">
+            {% comment %} <div class="col-3">
                 <!--menu-->
-                {% comment %} <div class="list-group">
+                <div class="list-group">
                     <a href="/" class="list-group-item list-group-item-action">Programlama</a>
                     <a href="/" class="list-group-item list-group-item-action">Web Geliştirme</a>
                     <a href="/" class="list-group-item list-group-item-action">Mobil Geliştirme</a>
                     <a href="/" class="list-group-item list-group-item-action">Yazılım</a>
-                </div> {% endcomment %}
-            </div>
+                </div> 
+            </div>{% endcomment %}
             
-            <div class="col-9">
+            <div class="col-9"> 
                 <!--content-->
                 {% block content %}
                 {% endblock content %}

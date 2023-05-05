@@ -97,3 +97,10 @@ migrations klasörü içinde 0001_inintial.py adında bir sayfa oluşturuldu.
 ama bunu da ayrıca uygulamak gerekiyor.
 migrations uygulama:  python manage.py migrate
 çalıştırdık ve uygulandı.
+veri tabanına veri ekleme işlemleri:
+internette django queries arattır.
+django documantationdan yararlan.
+shell moduna geçiş : python manage.py shell
+shell moduna çıkış : ctrl + z + enter
+
+

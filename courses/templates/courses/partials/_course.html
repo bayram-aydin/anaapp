@@ -6,16 +6,20 @@
     </div>
     <div class="col-8">
         <div class="card-body">
-            <h5 class="card-title">{{ course.title | lower }}</h5>
-            <p class="card-text">{{ course.description | truncatechars:"5"}}</p>
-            <span>
+            <h5 class="card-title">
+                <a href="{% url 'course_details' course.slug %}">
+                    {{ course.title }}
+                </a>
+            </h5>
+            <p class="card-text">{{ course.description | truncatechars:"25"}}</p>
+            {% comment %} <span>
                {% if course.isUpdated %}
                     <span class="badge bg-success">Güncellendi</span>
                     {% else %}
                     <span class="badge bg-danger">Güncelleme Bekliyor</span>
                 {% endif %}  
-            </span>
-             <p>{{course.date|date:'d F D'}}</p>  
+            </span> {% endcomment %}
+             <p>{{course.date|date:'SORT_DATE_FORMAT'}}</p>  
             
         </div>
     </div>
