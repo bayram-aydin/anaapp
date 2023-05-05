@@ -102,5 +102,37 @@ internette django queries arattır.
 django documantationdan yararlan.
 shell moduna geçiş : python manage.py shell
 shell moduna çıkış : ctrl + z + enter
+DÖRDÜNCÜ BÖLÜM:
+Yönetim Paneli:
+django admin aratıp, djangoproject.com da django sdmin site bölümünü inceleme
+yönetim paneline giriş url/admin yaz panele geldik.
+consola gel
+python manage.py createsuperuser
+çalıştır. kullanıcı adını soracak. istersen değiştir. admin yaz.
+sonra mail adresi gir. parola isteyecek.
+kullanıcı ad: bayram
+e-posta : bayram@bayram.com
+password : 963852741
 
+kullanıcı ad: zeynep
+e-posta : zeynep@zeynep.com
+password : Hastane...1
+
+ilk açıldığında panelde yönetici tanımlama seçeneği oluyor.
+sitedeki modelleri yönetim paneline tanımlama:
+courses altında bulunan admin.py sayfasına aşağıdaki kodları çalıştırısan
+yönetim paneline bu modülü tanıtır.
+from django.contrib import admin
+from .models import Course
+admin.site.register(Course)
+
+admin panelini şekillendirme işlemi:
+@admin.register(Course)
+class CourseAdmin(admin.ModelAdmin):
+    list_display=("title","isActive","slug")
+
+bir alanı sadece okunabilen bir alan yapmak için: readonly_fields=("slug")
+mesela arama penceresi için:  search_fields=("title","description")
+sonuç olarak seçenek çok.
+django dokümanlarını inceleyerek detay öğrenmek lazım.
 
