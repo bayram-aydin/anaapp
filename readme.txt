@@ -136,3 +136,22 @@ mesela arama penceresi için:  search_fields=("title","description")
 sonuç olarak seçenek çok.
 django dokümanlarını inceleyerek detay öğrenmek lazım.
 
+veri tablolarını models.py içinde class olarak tanımladık.
+ondan sonra admin.py içinde bu clas lara özellikler veriyoruz.
+yani yönetim panelinde alacakları davranış şeklini bu sayfada veriyoruz.
+
+video 6.1 de models.py içinde var olan course klasına category sütunu ekledik.
+direk migrate edersek hata verir. iki seçenek var. db dosyasını silip baştan migrate etmek veya
+defult değeri girmek yani:  
+category = models.ForeignKey(Category, default=1, on_delete=models.CASCADE)
+amacımız kategoriler ile bağlantı kurmak.
+ondan sonra: python manage.py makemigrations
+ondan sonra: python manage.py migrate  
+böyle olunca sorun çıkmadı.  
+klavye çalıştı.
+
+PAGİNATİON diye bişey var.
+hem boostrap ta hem djangoda açıklaması var.
+bir sayfaya kaç tane kurs göstersin anlamında bir sayfalama şekli.
+
+
