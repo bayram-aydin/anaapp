@@ -153,5 +153,8 @@ klavye çalıştı.
 PAGİNATİON diye bişey var.
 hem boostrap ta hem djangoda açıklaması var.
 bir sayfaya kaç tane kurs göstersin anlamında bir sayfalama şekli.
+sayfanın altına kaçıncı dayfada olduğunu gösteren sistem. sahibinden de falan var.
 
+search formu:
+7.3 videoda siteye arama butonu ekleme ve sorgusunu çalıştırma işlemleri
 
