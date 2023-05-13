@@ -158,3 +158,8 @@ sayfanın altına kaçıncı dayfada olduğunu gösteren sistem. sahibinden de f
 search formu:
 7.3 videoda siteye arama butonu ekleme ve sorgusunu çalıştırma işlemleri
 
+CSRF token işlemi. django da tanımlı bir özelliktir. formun içine yerleştirilir.
+örneğin:
+<form action="" method="POST"> {% csrf_token %} </form>
+burada html sayfası içinde iken django özelliği çalışması için {% .... %} şeklinde
+sintaks olamsı gerekiyor.
